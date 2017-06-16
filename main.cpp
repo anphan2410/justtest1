@@ -1,9 +1,5 @@
 #include <QCoreApplication>
 #include <QDebug>
-#include <QCanBus>
-#include <QCanBusDevice>
-#include <QCanBusFrame>
-#include <QCanBusFactory>
 
 int main(int argc, char *argv[])
 {
