@@ -1,10 +1,15 @@
 #include <QCoreApplication>
-#include <QProcess>
+#include <QDebug>
+#include <QCanBus>
+#include <QCanBusDevice>
+#include <QCanBusFrame>
+#include <QCanBusFactory>
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    QProcess::execute("/bin/bash justtest1.sh");
-
+    QLatin1String test("<3 I Love You");
+    qDebug() << test.left(7);
 
     return a.exec();
 }
